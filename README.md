@@ -17,7 +17,7 @@ To run a setup script, click a link in the table below from your target machine.
 |<a href='http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_web.ps1?token=AK0OHgglFNQqTj7ev_e-XMMFO2_aXURfks5a-J_qwA%3D%3D'>Web</a> | Web (VS Code, WSL, Multiple Browsers)        |
 |<a href='http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_web_nodejs.ps1?token=AK0OHvSmUvc8o37_V3DfN-83V-SfYXc6ks5a-KAAwA%3D%3D'>Web NodeJS</a>     | Web Dev with NodeJS (Web + NodeJS LTS)        |
 |<a href='http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/dev_ml_python.ps1?token=AK0OHvymvom-_7ykSUeevHbu7HsxgKKzks5a-J-NwA%3D%3D'>Machine Learning</a>| Machine Learning (Python, WSL, VS Code)        |
-|<a href='http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/myty/windows-dev-box-setup-scripts/master/dev_web_dotnet.ps1'>DotNET Web Dev</a>| DotNET Web Dev (DotNET SDK, Python, WSL, VS Code)        |
+|<a href='http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/myty/windows-dev-box-setup-scripts/myty-dev/dev_web_dotnet.ps1'>DotNET Web Dev</a>| DotNET Web Dev (DotNET SDK, Python, WSL, VS Code)        |
 |     | Xamarin (Visual Studio, Xamarin, Android SDK) |
 |     | Containers (Docker, Kubernetes, etc...)        |
 |     | More Coming Soon!        |
