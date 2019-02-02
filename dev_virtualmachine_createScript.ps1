@@ -48,6 +48,8 @@ choco install -y visualstudio2017-workload-nativedesktop
 executeScript "WindowsTemplateStudio.ps1";
 executeScript "GetUwpSamplesOffGithub.ps1";
 
+executeScript "WSL.ps1";
+
 #--- reenabling critial items ---
 Enable-UAC
 Enable-MicrosoftUpdate
