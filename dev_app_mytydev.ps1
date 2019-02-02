@@ -3,7 +3,7 @@
 # Common dev settings for desktop app development
 
 # Boxstarter options
-$Boxstarter.RebootOk=$true # Allow reboots true or false
+$Boxstarter.RebootOk=$false # Allow reboots true or false
 
 # POWERSHELL
 Update-ExecutionPolicy Unrestricted
