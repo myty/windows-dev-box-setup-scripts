@@ -5,6 +5,8 @@
 # POWERSHELL
 Set-ExecutionPolicy RemoteSigned
 
+Get-PendingReboot
+
 #---- TEMPORARY ---
 Disable-UAC
 
