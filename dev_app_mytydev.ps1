@@ -2,13 +2,16 @@
 # Author: Microsoft
 # Common dev settings for desktop app development
 
-# POWERSHELL
-Set-ExecutionPolicy RemoteSigned
+# Boxstarter options
+$Boxstarter.RebootOk=$true # Allow reboots true or false
 
-#Get-PendingReboot
+# POWERSHELL
+Update-ExecutionPolicy Unrestricted
+
+Get-PendingReboot
 
 #---- TEMPORARY ---
-#Disable-UAC
+Disable-UAC
 
 #---- POWERSHELL GALLERY ---
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
