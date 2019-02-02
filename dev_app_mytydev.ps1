@@ -2,9 +2,6 @@
 # Author: Microsoft
 # Common dev settings for desktop app development
 
-# Boxstarter options
-$Boxstarter.RebootOk=$false # Allow reboots true or false
-
 # POWERSHELL
 Update-ExecutionPolicy Unrestricted
 
@@ -72,6 +69,10 @@ choco install -y visualstudio2017-workload-azure
 choco install -y visualstudio2017-workload-universal
 choco install -y visualstudio2017-workload-manageddesktop
 choco install -y visualstudio2017-workload-nativedesktop
+
+choco install -y visualstudio2017buildtools
+choco install -y visualstudio2017-workload-vctools
+choco install -y microsoft-build-tools
 
 executeScript "WindowsTemplateStudio.ps1";
 executeScript "GetUwpSamplesOffGithub.ps1";
