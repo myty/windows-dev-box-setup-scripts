@@ -8,11 +8,6 @@ $Boxstarter.RebootOk=$false # Allow reboots true or false
 # POWERSHELL
 Update-ExecutionPolicy Unrestricted
 
-Get-PendingReboot
-
-#---- TEMPORARY ---
-Disable-UAC
-
 #---- POWERSHELL GALLERY ---
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 $Modules = @(
@@ -31,6 +26,9 @@ ForEach ($Module in $Modules) {
         Install-Module -Name $Module -AllowClobber
     }
 }
+
+#---- TEMPORARY ---
+Disable-UAC
 
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
