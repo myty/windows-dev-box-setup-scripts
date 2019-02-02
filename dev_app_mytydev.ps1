@@ -2,7 +2,30 @@
 # Author: Microsoft
 # Common dev settings for desktop app development
 
+# POWERSHELL
+Set-ExecutionPolicy RemoteSigned
+
+#---- TEMPORARY ---
 Disable-UAC
+
+#---- POWERSHELL GALLERY ---
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+$Modules = @(
+    # "PSReadline"
+    "oh-my-posh"
+    "Pscx"
+    "TabExpansionPlusPlus"
+    "posh-git"
+)
+
+ForEach ($Module in $Modules) {
+    if (Get-Module -ListAvailable -Name $Module) {
+        Update-Module -Name $Module
+    }
+    else {
+        Install-Module -Name $Module -AllowClobber
+    }
+}
 
 # Get the base URI path from the ScriptToCall value
 $bstrappackage = "-bootstrapPackage"
@@ -51,8 +74,9 @@ executeScript "WindowsTemplateStudio.ps1";
 executeScript "GetUwpSamplesOffGithub.ps1";
 
 executeScript "WSL.ps1";
-
+RefreshEnv
 executeScript "HyperV.ps1";
+RefreshEnv
 executeScript "Docker.ps1";
 
 

@@ -7,6 +7,7 @@ choco install -y OpenSSH.Client -source windowsFeatures
 
 #--- Tools ---
 choco install -y git-credential-manager-for-windows
+choco install -y powershell-core
 choco install -y jdk8
 choco install -y rust
 choco install -y golang
