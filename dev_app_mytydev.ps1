@@ -5,10 +5,10 @@
 # POWERSHELL
 Set-ExecutionPolicy RemoteSigned
 
-Get-PendingReboot
+#Get-PendingReboot
 
 #---- TEMPORARY ---
-Disable-UAC
+#Disable-UAC
 
 #---- POWERSHELL GALLERY ---
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
