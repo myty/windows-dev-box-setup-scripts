@@ -24,7 +24,7 @@ choco install -y filezilla
 #-------------------------------------------------
 # WEB TOOLS
 #-------------------------------------------------
-choco install -y IIS-WebServerRole -source windowsFeatures
+choco install -y IIS-WebServerRole --source="'windowsfeatures'"
 
 #--- Tools ---
 code --install-extension msjsdiag.debugger-for-chrome
